@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="icon" type="image/x-icon" href="besticone.png">
+    <title>Best Pizzaria</title>
+</head>
+<body>
+    <header>
+        <img src="nav/logobesstt.png" alt="logo da pizzaria" class="logo">
+        <h1 class="texto1">Best Pizzaria</h1>
+        <p class="texto">Bem-vindo à melhor pizzaria da cidade!</p>
+        <a class="btn-navg" href="#contato">contatos</a>
+        <a class="btn-navg" href="#cardapio">cardápio</a>
+        <a class="btn-navg" href="#refrigerantes">refrigerantes</a>
+    </header>
+<div class="bar">
+       <img src="nav/bans.jpg" alt="Faça seu pedido" class="imagem-bar">
+</div>
+<div class="titulo">
+      <h1>Pizzas</h1>
+    </div>
+    <div class="sabores" id="cardapio">
+        <div class="pizzas"> 
+            <img src="sabores/mussarela.jpg" alt="Pizza de Mussarela" class="imagempizza">
+            <h2>Mussarela <br>R$ 26,00</h2>
+            <p>Pizza de mussarela com <br> molho de tomate e orégano </p> 
+       <div class="botoes">
+        <div class="buttons">
+             <button onclick="adicionarPizza('Mussarela', 26)">
+        Adicionar
+            </button>
+        </div>
+        <a class="infos" href="informacoespizzas/mussarela/mussarela.html">Informações</a>
+        </div>
+    </div>
+ <div class="pizzas">
+            <img src="sabores/calabresa.jpg" alt="Pizza de Calabresa" class="imagempizza">
+            <h2>Calabresa <br>R$ 27,00</h2>
+            <p>Pizza de calabresa, mussarela, molho de tomate e orégano</p>
+    <div class="botoes">
+    <div class="buttons">
+             <button onclick="adicionarPizza('Calabresa', 27)">
+        Adicionar
+    </button>
+             </div>
+             <a class="infos" href="informacoespizzas/calabresa/calabresa.html">Informações</a>
+    </div>
+    </div>   
+
+        <div class="pizzas">
+            <img src="sabores/tresqueijos.jpg" alt="Pizza Três Queijos" class="imagempizza">
+            <h2 class="textorodape">Três Queijos <br>R$ 27,00</h2>
+            <p class="textorodape">Pizza com mussarela, cheddar, catupiry,molho de tomate e orégano</p>
+            <div class="botoes">
+            <div class="buttons">
+             <button onclick="adicionarPizza('Três Queijos', 27)">
+        Adicionar
+ </button>
+             </div>
+         <a class="infos" href="informacoespizzas/tresqueijos/tresq.html">Informações</a>
+        </div>
+    </div>      
+        <div class="pizzas">
+            <img src="sabores/frango.jpg" alt="Pizza de Frango" class="imagempizza">
+            <h2 class="textorodape">Frango <br>R$ 27,00</h2>
+            <p class="textorodape">Pizza com frango desfiado, mussarela, molho de tomate e orégano</p>
+            <div class="botoes">
+            <div class="buttons">
+             <button onclick="adicionarPizza('Frango', 27)">
+        Adicionar
+ </button>
+             </div>
+            <a class="infos" href="informacoespizzas/frango/frango.html">Informações</a>
+        </div>
+    </div>   
+        <div class="pizzas">
+            <img src="sabores/frangocatupiry.jpg" alt="Pizza Frango com Catupiry" class="imagempizza">
+            <h2 class="textorodape">Frango com Catupiry <br>R$ 30,00</h2>
+            <p class="textorodape">Pizza com frango desfiado, catupiry, queijo mussarela, molho de tomate e orégano</p>
+            <div class="botoes">
+            <div class="buttons">
+             <button onclick="adicionarPizza('Frango com Catupiry', 30)">
+        Adicionar
+ </button>
+             </div>
+                <a class="infos" href="informacoespizzas/frangocat/frangocat.html">Informações</a>
+            </div>
+    </div>   
+
+         <div class="pizzas">
+            <img src="sabores/banana.jpg" alt="Pizza de Banana" class="imagempizza">
+            <h2 class="textorodape">Banana <br>R$ 26,00</h2>
+            <p class="textorodape">Pizza com banana, mussarela, creme de leite e canela</p>
+            <div class="botoes">
+            <div class="buttons">
+             <button onclick="adicionarPizza('Banana', 26)">
+        Adicionar
+ </button>
+             </div>
+               <a class="infos" href="informacoespizzas/banana/banana.html">Informações</a>
+        </div>
+    </div>   
+         <div class="pizzas">
+            <img src="sabores/frangoxbacon.jpg" alt="Pizza Frango Cheese e Bacon" class="imagempizza">
+            <h2 class="textorodape">Frango Cheese Bacon <br>R$ 38,00</h2>
+            <p class="textorodape">Pizza com frango desfiado, bacon, creme cheese, queijo mussarela, molho de tomate e orégano</p>
+            <div class="botoes">
+            <div class="buttons">
+             <button onclick="adicionarPizza('Frango Cheese Bacon', 38)">
+        Adicionar
+ </button>
+             </div>
+               <a class="infos" href="informacoespizzas/frangoxb/frangoxb.html">Informações</a>
+        </div>
+    </div>   
+         <div class="pizzas">
+            <img src="sabores/calabresaxbacon.jpg" alt="Pizza Calabresa Cheese Bacon" class="imagempizza">
+            <h2 class="textorodape">Calabresa Cheese Bacon <br>R$ 38,00</h2>
+            <p class="textorodape">Pizza com calabresa, bacon, creme cheese, queijo mussarela, molho de tomate e orégano</p>
+            <div class="botoes">
+            <div class="buttons">
+             <button onclick="adicionarPizza('Calabresa Cheese Bacon', 38)">
+        Adicionar
+ </button>
+             </div>
+               <a class="infos" href="informacoespizzas/calabresaxb/calabresaxb.html">Informações</a>
+         </div>
+    </div>   
+    </div>
+    <div class="titulo">
+      <h1>Refrigerantes</h1>
+    </div>
+
+
+    <div class="refris">
+        <div class="refrigerantes">
+        <h2>Água Mineral 500ml <br> R$ 5,00</h2>
+        <img src="refrigerantes/agua.jpg" alt="Água Mineral 500ml" class="imagensrefrigerante">
+        <div class="buttons">
+             <button onclick="adicionarPizza('Água Mineral 500ml', 5)">
+        Adicionar
+ </button>
+        </div>
+</div> 
+        <div class="refrigerantes">
+        <h2>Guaraná Antarctica 1L <br> R$ 7,00</h2>
+        <img src="refrigerantes/antartica1.jpg" alt="Guaraná Antarctica 1L" class="imagensrefrigerante">
+        <div class="buttons">
+             <button onclick="adicionarPizza('Guaraná Antarctica 1L', 7)">
+        Adicionar
+   </button>
+        </div>
+</div>   
+        <div class="refrigerantes">
+        <h2>Fanta Laranja 2L <br> R$ 12,00</h2>
+        <img src="refrigerantes/fanta2.jpg" alt="Fanta Laranja 2L" class="imagensrefrigerante">
+        <div class="buttons">
+             <button onclick="adicionarPizza('Fanta Laranja 2L', 12)">
+        Adicionar
+ </button>
+        </div>
+</div>   
+        <div class="refrigerantes">
+        <h2>Coca-Cola 2L <br> R$ 13,00</h2>
+        <img src="refrigerantes/coca2.jpg" alt="Coca-Cola 2L" class="imagensrefrigerante">
+        <div class="botoes">
+        <div class="buttons">
+             <button onclick="adicionarPizza('Coca cola', 13)">
+        Adicionar
+           </button>
+        </div>
+</div>   
+        </div>
+    </div>
+<button onclick="abrirCarrinho()" id="botao-carrinho">
+    🛒
+</button>
+    <div class="carrinho" id="carrinho">
+    <div class="cabecalho-carrinho">
+        <h2>&#128722 Seu pedido</h2>
+        <button onclick="fecharCarrinho()" class="fechar-carrinho">
+            ×
+        </button>
+    </div>
+<div id="itens-carrinho">
+</div>
+<div class="total-carrinho">
+<strong id="total-carrinho">Total: R$ 0,00</strong>
+</div>
+<button>Finalizar pedido</button>
+</div>
+
+    <footer id="contato">
+    <div class="inffoot">
+        <h2>Horário de funcionamento</h2>
+        <p>18h às 22h</p>
+        </div>
+    <div class="inffoot">
+        <h2>Contato</h2>
+        <p>Telefone: (81) 9 8234-4954</p>
+    </div>
+    <div class="inffoot">
+        <h2>Endereço</h2>
+        <p>Rua da batalha, 52 - Jordão Alto, Recife - PE</p>
+        </div>
+    </footer>
+</body>
+</html>

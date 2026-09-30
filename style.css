@@ -1,0 +1,282 @@
+body {
+    background-color: #fff3d6;
+    color: #2B2118;
+}
+body {
+    margin: 0;
+    font-family: "Bree Serif", serif;
+    color: #C62828;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #8E1B1B;
+    color: #FFF3D6;
+    padding: 22px 14px;
+}
+.texto1 {
+width: 10%;
+}
+.logo {
+    padding: 0px 15px;
+    width: 80px;
+    height: auto;
+}
+.imagem-bar {
+    width: 100%; 
+}
+.texto {
+    color: #FFF3D6;
+    font-size: 20px;
+    padding: 0px 10px;
+    display: flex;
+}
+.btn-navg{
+    display: flex;
+    color: #8E1B1B;
+    background-color: #FDFBD4;
+    border: none;
+    margin: auto;
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 12px 22px;    
+    text-decoration: none;
+    border-radius: 20px;
+}
+.btn-navg:hover {
+    background-color: #2E4A2F;
+    color: #FFF3D6;
+}
+.sabores {
+    margin: 16px;
+    padding: 16px;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(200px, 1fr));
+    gap: 16px;
+}
+.pizzas {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 2px 4px 13px #0e0904
+}
+.pizzas h2 {
+    color: #8E1B1B;
+    margin-top: 1px;
+    font-weight: bold;
+}
+.pizzas p {
+    margin-top: -15px;
+}
+.imagempizza {
+    border-radius: 8px;
+    display:inline;
+    width: 250px;
+    height: auto;
+    margin-top: 10px;
+}
+.titulo{
+    text-align: center;
+}
+.refris {
+    margin: 16px;
+    padding: 16px;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(200px, 1fr));
+    gap: 16px;}
+
+    .refrigerantes {
+            text-align: center;
+    background-color: #ffffff;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 2px 4px 13px #0e0904; }
+
+.imagensrefrigerante {
+    display:inline;
+    align-items: center;
+    width: 200px;
+    height: auto;
+   border-radius: 8px;
+
+}
+.buttons button {
+    background-color: #2E4A2F;
+    color: #FFF3D6;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 11px 17px;
+    border-radius: 16px;
+    box-shadow: 1px 1px 15px #0e0904;
+}
+.buttons button:hover {
+    background-color: #fbfcfb;
+    color: #2E4A2F;
+}
+.textinfo{
+    font-weight:normal;
+    font-size: 22px;
+}
+.botoes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.infos {
+    display: flex;
+    color: #8E1B1B;
+    background-color: #FDFBD4;
+    border: none;
+    margin: 0;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 11px 17px;    
+    text-decoration: none;
+    text-align: center;
+    border-radius: 16px;
+    box-shadow: 1px 1px 15px #0e0904;
+}
+.infos:hover{
+background-color:#8E1B1B;
+color: #fbfcfb;
+}
+.infsabores{
+    display: flex;
+    background-color:#FDFBD4;
+    border-radius: 8px;
+    padding: 25px 50px; 
+    box-shadow: 4px 7px 30px #0e0904
+}
+.pizzainfo{
+    display: flex;
+    width: 400px;
+    padding: 30px 55px;
+    border-radius: 90px;
+}
+#botao-carrinho {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 60px;
+    height: 60px;
+    border: none;
+    border-radius: 50%;
+    background-color: #2E4A2F;
+    color: #FFF3D6;
+    font-size: 28px;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    z-index: 999;
+    display: none;
+    position: fixed;
+}
+.cabecalho-carrinho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.fechar-carrinho {
+    border: none;
+    background: transparent;
+    color: #8E1B1B;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.carrinho {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 320px;
+    max-height: 520px;
+    background-color: #FFF3D6;
+    color: #2B2118;
+    border-radius: 18px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    z-index: 1000;
+    display: none;
+}
+.carrinho h2 {
+    font-weight: bold;
+    margin-top: 0;
+    text-align: center;
+    color: #8E1B1B;
+}
+#itens-carrinho > div {
+    padding: 12px 0;
+    border-bottom: 1px solid #ddd;
+}
+#itens-carrinho button {
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 8px;
+    background-color: #2E4A2F;
+    color: #FFF3D6;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+#itens-carrinho button:hover {
+    background-color: #8E1B1B;
+}
+#itens-carrinho span {
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+    font-weight: bold;
+}
+#itens-carrinho {
+    max-height: 280px;
+    overflow-y: auto;
+    padding-right: 5px;
+}
+.total-carrinho {
+    padding: 18px 0;
+    font-size: 20px;
+    text-align: right;
+    color: #8E1B1B;
+}
+.carrinho > button {
+    width: 100%;
+    padding: 13px;
+    border: none;
+    border-radius: 12px;
+    background-color: #2E4A2F;
+    color: #FFF3D6;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.carrinho > button:hover {
+    background-color: #8E1B1B;
+}
+.textosinf{
+    display:flex;
+    font-size: 15px;
+    text-align: center;
+}
+.inffoot {
+    width: 300px;
+    color: #2E4A2F;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 80px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 40px 20px;
+}
