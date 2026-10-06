@@ -1,4 +1,4 @@
-let carrinho = [];
+let carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
 function abrirCarrinho() {
     document.getElementById("carrinho").style.display = "block";
     document.getElementById("botao-carrinho").style.display = "none";
@@ -53,40 +53,44 @@ function diminuirQuantidade(indice) {
 
 
 function atualizarCarrinho() {
-
+    localStorage.setItem("carrinho", JSON.stringify(carrinho));
     let itensCarrinho = document.getElementById("itens-carrinho");
-
     itensCarrinho.innerHTML = "";
-
     let total = 0;
-
     carrinho.forEach(function(produto, indice) {
-
         let item = document.createElement("div");
-
         item.innerHTML = `
             <p>
                 <strong>${produto.nome}</strong>
                 <br>
                 R$ ${(produto.preco * produto.quantidade).toFixed(2).replace(".", ",")}
             </p>
-
             <button onclick="diminuirQuantidade(${indice})">
                 −
             </button>
-
             <span>${produto.quantidade}</span>
-
             <button onclick="aumentarQuantidade(${indice})">
                 +
             </button>
         `;
-
         itensCarrinho.appendChild(item);
-
         total += produto.preco * produto.quantidade;
     });
-
     document.getElementById("total-carrinho").textContent =
         `Total: R$ ${total.toFixed(2).replace(".", ",")}`;
 }
+function finalizarPedido() {
+
+    if (carrinho.length === 0) {
+        alert("Seu carrinho está vazio!");
+        return;
+    }
+
+    window.location.href = "checkout.html";
+}
+window.addEventListener("DOMContentLoaded", function() {
+    if (carrinho.length > 0) {
+        atualizarCarrinho();
+        document.getElementById("botao-carrinho").style.display = "block";
+    }
+});

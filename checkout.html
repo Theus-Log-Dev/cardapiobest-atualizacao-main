@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="check.css">
+    <link rel="icon" type="image/x-icon" href="besticone.png">
+    <title>Finalizar Pedido | Best Pizzaria</title>
+</head>
+<body>
+    <header class="header-checkout">
+        <div class="marca-checkout">
+            <img src="nav/logobesstt.png" alt="Logo Best Pizzaria">
+            <h2>Best Pizzaria</h2>
+        </div>
+        <a href="index.html" class="voltar-cardapio">
+            ← Voltar ao cardápio
+        </a>
+    </header>
+    <main class="checkout">
+        <div class="titulo-checkout">
+            <h1>🍕 FINALIZAR PEDIDO</h1>
+            <p>
+                Preencha seus dados e confirme seu pedido pelo WhatsApp.
+            </p>
+        </div>
+        <div class="checkout-conteudo">
+            <section class="dados-cliente">
+                <h2>👤 Dados para entrega</h2>
+                <div class="campo">
+                    <label for="nome">
+                        Nome
+                    </label>
+
+                    <input
+                        type="text"
+                        id="nome"
+                        placeholder="Digite seu nome"
+                    >
+                </div>
+                <div class="campo">
+                    <label for="endereco">
+                        Endereço
+                    </label>
+                    <input
+                        type="text"
+                        id="endereco"
+                        placeholder="Digite seu endereço completo"
+                    >
+                </div>
+                <div class="campo">
+                    <label for="pagamento">
+                        Forma de pagamento
+                    </label>
+                    <select id="pagamento">
+                        <option value="">
+                            Selecione
+                        </option>
+                        <option value="Dinheiro">
+                            Dinheiro
+                        </option>
+                        <option value="Pix">
+                            Pix
+                        </option>
+                        <option value="Cartão">
+                            Cartão
+                        </option>
+                    </select>
+                </div>
+            </section>
+            <section class="resumo-pedido">
+                <h2>🛒 Seu pedido</h2>
+                <div id="resumo-itens">
+                </div>
+                <div class="total-checkout">
+                    <span>Total</span>
+                    <strong id="resumo-total">
+                        Total: R$ 0,00
+                    </strong>
+                </div>
+            </section>
+        </div>
+        <!-- BOTÕES -->
+        <div class="acoes-checkout">
+            <button id="enviar-pedido" onclick="enviarPedido()">
+        📱 Enviar pedido pelo WhatsApp
+        </button>
+            <button
+                onclick="novoPedido()"
+                class="novo-pedido"
+            >
+                ↻ Fazer novo pedido
+            </button>
+        </div>
+    </main>
+    <footer class="footer-checkout">
+    <div>
+        <strong>Best Pizzaria</strong>
+        <p>Sabor que transforma cada pedido em um momento especial.</p>
+    </div>
+    <div>
+        <strong>Horário</strong>
+        <p>Terça à domingo • 18h às 22h</p>
+    </div>
+    <div>
+        <strong>Contato</strong>
+        <p>(81) 98234-4954</p>
+    </div>
+</footer>
+    <script src="checkout.js"></script>
+</body>
+</html>
