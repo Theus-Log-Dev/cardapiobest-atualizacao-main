@@ -280,3 +280,267 @@ color: #fbfcfb;
     box-sizing: border-box;
     padding: 40px 20px;
 }
+
+/* responsividade */
+@media (max-width: 1024px) {
+
+    header {
+        padding: 18px 12px;
+        gap: 10px;
+    }
+
+
+    .logo {
+        width: 65px;
+        padding: 0 8px;
+    }
+
+
+    .texto1 {
+        width: auto;
+        font-size: 25px;
+    }
+
+
+    .texto {
+        font-size: 17px;
+        padding: 0 5px;
+    }
+
+
+    .btn-navg {
+        font-size: 17px;
+        padding: 10px 15px;
+    }
+
+
+    .sabores {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .refris {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .imagempizza {
+        width: 100%;
+        max-width: 250px;
+    }
+
+
+    .imagensrefrigerante {
+        width: 100%;
+        max-width: 200px;
+    }
+
+
+    footer {
+        gap: 30px;
+    }
+}
+@media (max-width: 768px) {
+
+    header {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+        padding: 15px;
+    }
+
+
+    .logo {
+        width: 65px;
+    }
+
+
+    .texto1 {
+        width: auto;
+        font-size: 25px;
+        margin-right: 15px;
+    }
+
+
+    .texto {
+        width: 100%;
+        justify-content: center;
+        margin: 5px 0;
+        font-size: 17px;
+    }
+
+
+    .btn-navg {
+        margin: 0;
+        font-size: 16px;
+        padding: 9px 14px;
+    }
+
+
+    .imagem-bar {
+        width: 100%;
+        display: block;
+    }
+
+
+    .sabores {
+        margin: 10px;
+        padding: 10px;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+
+    .pizzas {
+        max-width: 500px;
+        width: 100%;
+        margin: auto;
+        box-sizing: border-box;
+    }
+
+
+    .imagempizza {
+        width: 100%;
+        max-width: 300px;
+    }
+
+
+    .refris {
+        margin: 10px;
+        padding: 10px;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+
+    .refrigerantes {
+        max-width: 500px;
+        width: 100%;
+        margin: auto;
+        box-sizing: border-box;
+    }
+
+
+    .carrinho {
+        width: calc(100% - 40px);
+        max-width: 320px;
+        right: 10px;
+        bottom: 10px;
+        box-sizing: border-box;
+    }
+
+
+    #botao-carrinho {
+        right: 15px;
+        bottom: 15px;
+    }
+
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+
+    .inffoot {
+        width: 100%;
+        max-width: 350px;
+    }
+}
+@media (max-width: 480px) {
+
+    header {
+        gap: 10px;
+        padding: 12px 8px;
+    }
+
+
+    .logo {
+        width: 55px;
+        padding: 0;
+    }
+
+
+    .texto1 {
+        font-size: 22px;
+        margin-right: 0;
+    }
+
+
+    .texto {
+        font-size: 15px;
+    }
+
+
+    .btn-navg {
+        font-size: 14px;
+        padding: 8px 11px;
+        border-radius: 14px;
+    }
+
+
+    .titulo h1 {
+        font-size: 28px;
+    }
+
+
+    .sabores,
+    .refris {
+        margin: 5px;
+        padding: 8px;
+    }
+
+
+    .pizzas,
+    .refrigerantes {
+        padding: 12px;
+    }
+
+
+    .imagempizza {
+        max-width: 250px;
+    }
+
+
+    .imagensrefrigerante {
+        max-width: 180px;
+    }
+
+
+    .botoes {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+
+    .buttons button,
+    .infos {
+        width: 100%;
+        justify-content: center;
+        box-sizing: border-box;
+    }
+
+
+    .carrinho {
+        width: calc(100% - 20px);
+        max-width: none;
+        right: 10px;
+        bottom: 10px;
+        padding: 15px;
+    }
+
+
+    #botao-carrinho {
+        width: 55px;
+        height: 55px;
+        right: 12px;
+        bottom: 12px;
+        font-size: 25px;
+    }
+
+
+    footer {
+        padding: 30px 15px;
+    }
+}

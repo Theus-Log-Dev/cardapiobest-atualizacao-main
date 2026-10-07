@@ -1,5 +1,4 @@
 let carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
-console.log("Carrinho recebido:", carrinho);
 let resumoItens = document.getElementById("resumo-itens");
 let resumoTotal = document.getElementById("resumo-total");
 let total = 0;

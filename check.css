@@ -319,3 +319,286 @@ body {
     color: #FFF3D6;
     font-size: 15px;
 }
+/* responsividade */
+
+@media (max-width: 1024px) {
+
+    .checkout {
+        width: 88%;
+        padding: 30px;
+    }
+
+
+    .header-checkout {
+        padding: 15px 5%;
+    }
+
+
+    .checkout-conteudo {
+        gap: 20px;
+    }
+
+
+    .campo {
+        padding: 0 22px;
+    }
+
+
+    #resumo-itens {
+        padding: 10px 22px;
+    }
+
+
+    .item-resumo {
+        grid-template-columns: 1fr 45px 90px;
+    }
+
+
+    .footer-checkout {
+        gap: 45px;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .header-checkout {
+        padding: 12px 5%;
+    }
+
+
+    .marca-checkout img {
+        width: 60px;
+    }
+
+
+    .marca-checkout h2 {
+        font-size: 24px;
+    }
+
+
+    .voltar-cardapio {
+        padding: 9px 14px;
+        font-size: 14px;
+    }
+
+
+    .checkout {
+        width: calc(100% - 40px);
+        margin: 25px auto 40px;
+        padding: 25px;
+        box-sizing: border-box;
+    }
+
+
+    .titulo-checkout {
+        margin-bottom: 25px;
+    }
+
+
+    .titulo-checkout h1 {
+        font-size: 30px;
+    }
+
+
+    .titulo-checkout p {
+        font-size: 16px;
+    }
+
+
+    .checkout-conteudo {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+
+    .dados-cliente h2,
+    .resumo-pedido h2 {
+        font-size: 20px;
+    }
+
+
+    .campo {
+        padding: 0 25px;
+    }
+
+
+    .acoes-checkout {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+
+    .footer-checkout {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 25px;
+        margin-top: 40px;
+    }
+
+
+    .footer-checkout div {
+        width: 100%;
+        max-width: 350px;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    .header-checkout {
+        flex-direction: column;
+        justify-content: center;
+        gap: 12px;
+        padding: 15px;
+    }
+
+
+    .marca-checkout {
+        gap: 10px;
+    }
+
+
+    .marca-checkout img {
+        width: 55px;
+    }
+
+
+    .marca-checkout h2 {
+        font-size: 22px;
+    }
+
+
+    .voltar-cardapio {
+        font-size: 14px;
+        padding: 8px 13px;
+    }
+
+
+    .checkout {
+        width: calc(100% - 20px);
+        margin: 15px auto 30px;
+        padding: 15px;
+        border-radius: 15px;
+    }
+
+
+    .titulo-checkout {
+        margin-bottom: 20px;
+    }
+
+
+    .titulo-checkout h1 {
+        font-size: 25px;
+        margin-top: 5px;
+    }
+
+
+    .titulo-checkout p {
+        font-size: 15px;
+    }
+
+
+    .dados-cliente,
+    .resumo-pedido {
+        border-radius: 12px;
+    }
+
+
+    .dados-cliente h2,
+    .resumo-pedido h2 {
+        padding: 15px 18px;
+        font-size: 18px;
+    }
+
+
+    .campo {
+        padding: 0 18px;
+        margin-top: 20px;
+    }
+
+
+    .campo label {
+        font-size: 16px;
+    }
+
+
+    .campo input,
+    .campo select {
+        padding: 12px;
+        font-size: 15px;
+        box-sizing: border-box;
+        width: 100%;
+    }
+
+
+    #resumo-itens {
+        padding: 8px 18px;
+    }
+
+
+    .item-resumo {
+        grid-template-columns: minmax(0, 1fr) 35px 80px;
+        gap: 5px;
+        padding: 14px 0;
+    }
+
+
+    .nome-produto {
+        font-size: 15px;
+    }
+
+
+    .quantidade-produto {
+        font-size: 14px;
+    }
+
+
+    .preco-produto {
+        font-size: 14px;
+    }
+
+
+    .total-checkout {
+        margin: 15px;
+        padding: 16px 18px;
+    }
+
+
+    .total-checkout span {
+        font-size: 17px;
+    }
+
+
+    #resumo-total {
+        font-size: 21px;
+    }
+
+
+    .acoes-checkout {
+        margin-top: 20px;
+    }
+
+
+    .acoes-checkout button {
+        padding: 14px;
+        font-size: 16px;
+    }
+
+
+    .footer-checkout {
+        margin-top: 30px;
+        padding: 30px 15px;
+    }
+
+
+    .footer-checkout strong {
+        font-size: 17px;
+    }
+
+
+    .footer-checkout p {
+        font-size: 14px;
+    }
+}
