@@ -1,11 +1,8 @@
 body {
-    background-color: #fff3d6;
-    color: #2B2118;
-}
-body {
     margin: 0;
     font-family: "Bree Serif", serif;
     color: #C62828;
+    background-color: #fff3d6;
 }
 header {
     display: flex;
@@ -175,7 +172,6 @@ color: #fbfcfb;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
     z-index: 999;
     display: none;
-    position: fixed;
 }
 .cabecalho-carrinho {
     display: flex;
